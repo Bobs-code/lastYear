@@ -1,43 +1,40 @@
-
-    <div
-      class="journal__area"
-      style="
-        border: 2px solid black;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 600px;
-        height: 75vh;
-        margin: auto;
-      "
-    >
-      <section style="margin: 5px">
+<div class="container d-flex f-center">
+    <div class="journal__area f-evenly mt5 p0">
+      <section>
         <article>
-          <div class="mb-3 d-flex">
-            <label for="thisyear" class="form-label">This year</label>
+          <div class="p1 d-flex f-column text-center">
+            <label for="thisyear" class="form-label mb2"><h2>Last year</h2></label>
             <textarea
               class="form-control"
               name="thisyear"
               id=""
-              rows="3"
+              cols="40"
+              rows="5"
             ></textarea>
+            <button type="submit">Submit</button>
           </div>
         </article>
       </section>
-      <section style="margin: 5px">
-        <article>
-          <div><h3>Last Year</h3></div>
-          <textarea
-            style="height: 30vh"
-            aria-label="text area"
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Type Here"
-          ></textarea>
-        </article>
-      </section>
+
+      <section>
+         <article>
+           <div class="p1 d-flex f-column text-center">
+            
+               <label for="thisyear" class="form-label mb2">
+                  <h2>This year</h2>
+               </label>
+               <textarea
+               class="form-control"
+               name="thisyear"
+               id=""
+               cols="40"
+               rows="5"
+               ></textarea>
+               <button type="submit">Submit</button>
+           </div>
+         </article>
+       </section>
     </div>
+</div>
   </body>
 </html>
